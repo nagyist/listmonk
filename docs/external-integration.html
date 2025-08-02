@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="i18n.html">
       
-        <link rel="next" href="installation.html">
+      
+        <link rel="next" href="roles-and-permissions.html">
       
       
       <link rel="icon" href="images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>listmonk / Documentation</title>
+        <title>Integrating with external systems - listmonk / Documentation</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#integrating-with-external-systems" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Integrating with external systems
             
           </span>
         </div>
@@ -197,32 +199,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -233,35 +213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,8 +348,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -431,11 +384,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -451,7 +404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Using listmonk
@@ -623,10 +576,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="external-integration.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Integrating with external systems
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="external-integration.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -637,6 +612,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interacting-directly-with-the-db" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting directly with the DB
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1178,9 +1191,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
+  <a href="#using-apis" class="md-nav__link">
     <span class="md-ellipsis">
-      Developers
+      Using APIs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interacting-directly-with-the-db" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting directly with the DB
     </span>
   </a>
   
@@ -1202,12 +1224,12 @@
 
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p><a href="https://listmonk.app"><img alt="listmonk" src="images/logo.svg" /></a></p>
-<p>listmonk is a self-hosted, high performance one-way mailing list and newsletter manager. It comes as a standalone binary and the only dependency is a Postgres database.</p>
-<p><a href="https://listmonk.app"><img alt="listmonk screenshot" src="https://user-images.githubusercontent.com/547147/134939475-e0391111-f762-44cb-b056-6cb0857755e3.png" /></a></p>
-<h2 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h2>
-<p>listmonk is a free and open source software licensed under AGPLv3. If you are interested in contributing, check out the <a href="https://github.com/knadh/listmonk">GitHub repository</a> and refer to the <a href="developer-setup.html">developer setup</a>. The backend is written in Go and the frontend is Vue with Buefy for UI. </p>
+<h1 id="integrating-with-external-systems">Integrating with external systems<a class="headerlink" href="#integrating-with-external-systems" title="Permanent link">&para;</a></h1>
+<p>In many environments, a mailing list manager's subscriber database is not run independently but as a part of an existing customer database or a CRM. There are multiple ways of keeping listmonk in sync with external systems.</p>
+<h2 id="using-apis">Using APIs<a class="headerlink" href="#using-apis" title="Permanent link">&para;</a></h2>
+<p>The <a href="apis/subscribers.html">subscriber APIs</a> offers several APIs to manipulate the subscribers database, like addition, updation, and deletion. For bulk synchronisation, a CSV can be generated (and optionally zipped) and posted to the import API.</p>
+<h2 id="interacting-directly-with-the-db">Interacting directly with the DB<a class="headerlink" href="#interacting-directly-with-the-db" title="Permanent link">&para;</a></h2>
+<p>listmonk uses tables with simple schemas to represent subscribers (<code>subscribers</code>), lists (<code>lists</code>), and subscriptions (<code>subscriber_lists</code>). It is easy to add, update, and delete subscriber information directly with the database tables for advanced usecases. See the <a href="https://github.com/knadh/listmonk/blob/master/schema.sql">table schemas</a> for more information.</p>
 
 
 

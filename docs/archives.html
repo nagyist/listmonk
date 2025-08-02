@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="messengers.html">
       
-        <link rel="next" href="installation.html">
+      
+        <link rel="next" href="i18n.html">
       
       
       <link rel="icon" href="images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>listmonk / Documentation</title>
+        <title>Archives - listmonk / Documentation</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#archives" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Archives
             
           </span>
         </div>
@@ -197,32 +199,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -233,35 +213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,8 +348,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -431,11 +384,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -451,7 +404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Using listmonk
@@ -577,10 +530,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="archives.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="archives.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -591,6 +553,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1171,23 +1134,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1202,12 +1148,29 @@
 
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p><a href="https://listmonk.app"><img alt="listmonk" src="images/logo.svg" /></a></p>
-<p>listmonk is a self-hosted, high performance one-way mailing list and newsletter manager. It comes as a standalone binary and the only dependency is a Postgres database.</p>
-<p><a href="https://listmonk.app"><img alt="listmonk screenshot" src="https://user-images.githubusercontent.com/547147/134939475-e0391111-f762-44cb-b056-6cb0857755e3.png" /></a></p>
-<h2 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h2>
-<p>listmonk is a free and open source software licensed under AGPLv3. If you are interested in contributing, check out the <a href="https://github.com/knadh/listmonk">GitHub repository</a> and refer to the <a href="developer-setup.html">developer setup</a>. The backend is written in Go and the frontend is Vue with Buefy for UI. </p>
+<h1 id="archives">Archives<a class="headerlink" href="#archives" title="Permanent link">&para;</a></h1>
+<p>A global public archive is maintained on the public web interface. It can be
+enabled under Settings -&gt; Settings -&gt; General -&gt; Enable public mailing list
+archive.</p>
+<p>To make a campaign available in the public archive (provided it has been
+enabled in the settings as described above), enable the option
+'Publish to public archive' under Campaigns -&gt; Create new -&gt; Archive.</p>
+<p>When using template variables that depend on subscriber data (such as any
+template variable referencing <code>.Subscriber</code>), such data must be supplied
+as 'Campaign metadata', which is a JSON object that will be used in place
+of <code>.Subscriber</code> when rendering the archive template and content.</p>
+<p>When individual subscriber tracking is enabled, TrackLink requires that a UUID
+of an existing user is provided as part of the campaign metadata. Any clicks on
+a TrackLink from the archived campaign will be counted towards that subscriber.</p>
+<p>As an example:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;UUID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5a837423-a186-5623-9a87-82691cbe3631&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;example@example.com&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reader&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attribs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><img alt="Archive campaign" src="images/archived-campaign-metadata.png" /></p>
 
 
 

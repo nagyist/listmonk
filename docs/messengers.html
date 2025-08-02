@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="bounces.html">
       
-        <link rel="next" href="installation.html">
+      
+        <link rel="next" href="archives.html">
       
       
       <link rel="icon" href="images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>listmonk / Documentation</title>
+        <title>Messengers - listmonk / Documentation</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#messengers" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Messengers
             
           </span>
         </div>
@@ -197,32 +199,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -233,35 +213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,8 +348,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -431,11 +384,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -451,7 +404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Using listmonk
@@ -554,10 +507,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="messengers.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Messengers
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="messengers.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -568,6 +543,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#messenger-implementations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messenger implementations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1178,9 +1182,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
+  <a href="#messenger-implementations" class="md-nav__link">
     <span class="md-ellipsis">
-      Developers
+      Messenger implementations
     </span>
   </a>
   
@@ -1202,12 +1206,66 @@
 
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p><a href="https://listmonk.app"><img alt="listmonk" src="images/logo.svg" /></a></p>
-<p>listmonk is a self-hosted, high performance one-way mailing list and newsletter manager. It comes as a standalone binary and the only dependency is a Postgres database.</p>
-<p><a href="https://listmonk.app"><img alt="listmonk screenshot" src="https://user-images.githubusercontent.com/547147/134939475-e0391111-f762-44cb-b056-6cb0857755e3.png" /></a></p>
-<h2 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h2>
-<p>listmonk is a free and open source software licensed under AGPLv3. If you are interested in contributing, check out the <a href="https://github.com/knadh/listmonk">GitHub repository</a> and refer to the <a href="developer-setup.html">developer setup</a>. The backend is written in Go and the frontend is Vue with Buefy for UI. </p>
+<h1 id="messengers">Messengers<a class="headerlink" href="#messengers" title="Permanent link">&para;</a></h1>
+<p>listmonk supports multiple custom messaging backends in additional to the default SMTP e-mail backend, enabling not just e-mail campaigns, but arbitrary message campaigns such as SMS, FCM notifications etc.</p>
+<p>A <em>Messenger</em> is a web service that accepts a campaign message pushed to it as a JSON request, which the service can in turn broadcast as SMS, FCM etc. Messengers are registered in the <em>Settings -&gt; Messengers</em> UI, and can be selected on individual campaigns.</p>
+<p>Messengers support optional BasicAuth authentication. <code>Plain text</code> format for campaign content is ideal for messengers such as SMS and FCM.</p>
+<p>When a campaign starts, listmonk POSTs messages in the following format to the selected messenger's endpoint. The endpoint should return a <code>200 OK</code> response in case of a successful request.</p>
+<p>The address required to broadcast the message, for instance, a phone number or an FCM ID, is expected to be stored and relayed as <a href="concepts.html#attributes">subscriber attributes</a>. </p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;subject&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Welcome to listmonk&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;body&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The message body&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;content_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;plain&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;recipients&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span>
+<span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e44b4135-1e1d-40c5-8a30-0f9a886c2884&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anon@example.com&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Anon Doe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;attribs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;phone&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;123123123&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;fcm_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2e7e4b512e7e4b512e7e4b51&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Bengaluru&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;enabled&quot;</span>
+<span class="w">    </span><span class="p">}],</span>
+<span class="w">    </span><span class="nt">&quot;campaign&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2e7e4b51-f31b-418a-a120-e41800cb689f&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test campaign&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;test-campaign&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="messenger-implementations">Messenger implementations<a class="headerlink" href="#messenger-implementations" title="Permanent link">&para;</a></h2>
+<p>Following is a list of HTTP messenger servers that connect to various backends.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Backend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/joeirimpan/listmonk-messenger">listmonk-messenger</a></td>
+<td style="text-align: left;">AWS Pinpoint SMS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/antandros/listmonk-verimor-gateway">listmonk-verimor-gateway</a></td>
+<td style="text-align: left;">Verimor</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/tkawczynski/listmonk-mailersend">listmonk-mailersend</a></td>
+<td style="text-align: left;">Mailersend</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/Codepowercode/listmonk-novu-messenger">listmonk-novu-messenger</a></td>
+<td style="text-align: left;">Novu</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/shyamkrishna21/listmonk-push-messenger">listmonk-push-messenger</a></td>
+<td style="text-align: left;">Google FCM</td>
+</tr>
+</tbody>
+</table>
 
 
 

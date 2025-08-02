@@ -9,8 +9,10 @@
       
       
       
+        <link rel="prev" href="archives.html">
       
-        <link rel="next" href="installation.html">
+      
+        <link rel="next" href="external-integration.html">
       
       
       <link rel="icon" href="images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>listmonk / Documentation</title>
+        <title>Internationalization - listmonk / Documentation</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#internationalization-i18n" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Internationalization
             
           </span>
         </div>
@@ -197,32 +199,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
         
   
   
@@ -233,35 +213,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Developers
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -397,8 +348,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -431,11 +384,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -451,7 +404,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Using listmonk
@@ -600,10 +553,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="i18n.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Internationalization
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="i18n.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -614,6 +589,77 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#additional-language-packs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional language packs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing languages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-a-new-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing a new language
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing a new language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-basic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the basic editor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-inlang-external-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using InLang (external service)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1178,11 +1224,53 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#developers" class="md-nav__link">
+  <a href="#additional-language-packs" class="md-nav__link">
     <span class="md-ellipsis">
-      Developers
+      Additional language packs
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-languages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing languages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing-a-new-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributing a new language
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing a new language">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-the-basic-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the basic editor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-inlang-external-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using InLang (external service)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1202,12 +1290,43 @@
 
 
 
-<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
-<p><a href="https://listmonk.app"><img alt="listmonk" src="images/logo.svg" /></a></p>
-<p>listmonk is a self-hosted, high performance one-way mailing list and newsletter manager. It comes as a standalone binary and the only dependency is a Postgres database.</p>
-<p><a href="https://listmonk.app"><img alt="listmonk screenshot" src="https://user-images.githubusercontent.com/547147/134939475-e0391111-f762-44cb-b056-6cb0857755e3.png" /></a></p>
-<h2 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h2>
-<p>listmonk is a free and open source software licensed under AGPLv3. If you are interested in contributing, check out the <a href="https://github.com/knadh/listmonk">GitHub repository</a> and refer to the <a href="developer-setup.html">developer setup</a>. The backend is written in Go and the frontend is Vue with Buefy for UI. </p>
+<h1 id="internationalization-i18n">Internationalization (i18n)<a class="headerlink" href="#internationalization-i18n" title="Permanent link">&para;</a></h1>
+<p>listmonk comes available in multiple languages thanks to language packs contributed by volunteers. A language pack is a JSON file with a map of keys and corresponding translations. The bundled languages can be <a href="https://github.com/knadh/listmonk/tree/master/i18n">viewed here</a>.</p>
+<h2 id="additional-language-packs">Additional language packs<a class="headerlink" href="#additional-language-packs" title="Permanent link">&para;</a></h2>
+<p>These additional language packs can be downloaded and passed to listmonk with the <code>--i18n-dir</code> flag as described in the next section.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://raw.githubusercontent.com/SvenPe/listmonk/4bbb2e5ebb2314b754cb2318f4f6683a0f854d43/i18n/de.json">Deutsch (formal)</a></td>
+<td>German language with formal pronouns</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customizing-languages">Customizing languages<a class="headerlink" href="#customizing-languages" title="Permanent link">&para;</a></h2>
+<p>To customize an existing language or to load a new language, put one or more <code>.json</code> language files in a directory, and pass the directory path to listmonk with the<br /><code>--i18n-dir=/path/to/dir</code> flag.</p>
+<h2 id="contributing-a-new-language">Contributing a new language<a class="headerlink" href="#contributing-a-new-language" title="Permanent link">&para;</a></h2>
+<h3 id="using-the-basic-editor">Using the basic editor<a class="headerlink" href="#using-the-basic-editor" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Visit <a href="https://listmonk.app/i18n">https://listmonk.app/i18n</a></li>
+<li>Click on <code>Createa new language</code>, or to make changes to an existing language, use <code>Load language</code>.</li>
+<li>Translate the text in the text fields on the UI.</li>
+<li>Once done, use the <code>Download raw JSON</code> to download the language file.</li>
+<li>Send a pull request to add the file to the <a href="https://github.com/knadh/listmonk/tree/master/i18n">i18n directory on the GitHub repo</a>. </li>
+</ul>
+<h3 id="using-inlang-external-service">Using InLang (external service)<a class="headerlink" href="#using-inlang-external-service" title="Permanent link">&para;</a></h3>
+<p><a href="https://inlang.com/editor/github.com/knadh/listmonk?ref=badge"><img alt="translation badge" src="https://inlang.com/badge?url=github.com/knadh/listmonk" /></a></p>
+<ul>
+<li>Visit <a href="https://inlang.com/editor/github.com/knadh/listmonk">https://inlang.com/editor/github.com/knadh/listmonk</a></li>
+<li>To make changes and push them, you need to log in to GitHub using OAuth and fork the project from the UI.</li>
+<li>Translate the text in the input fields on the UI. You can use the filters to see only the necessary translations.</li>
+<li>Once you're done, push the changes from the UI and click on "Open a pull request." This will take you to GitHub, where you can write a PR message.</li>
+</ul>
 
 
 
